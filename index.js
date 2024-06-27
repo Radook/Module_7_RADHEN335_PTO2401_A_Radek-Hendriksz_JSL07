@@ -23,12 +23,18 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Please fill in all fields');
         return;
       }
+
   
       // 🚨 Generate certificate content dynamically
       certificateContent.innerHTML = `
+      <h1> Certificate Of Achievement <h1>
+      <h4>This is to certify that<h4>
       <h3>${studentName}</h3>
-      <p>${personalMessage}</p>
+      <h4>Has almost completed the<h4>
       <p>Course: ${courseName}</p>
+      <h4>with legendary perseverance and world-class bad-assery for never giving up!<h4>
+      <img src=\"logo.png" width=\"400px\" height=\"120px\">
+      <p>${personalMessage}</p>
     `;
     
       //  Display the modal
